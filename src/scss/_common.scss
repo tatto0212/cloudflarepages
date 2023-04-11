@@ -1,0 +1,60 @@
+a {
+  color: $primary-color;
+}
+
+.section {
+  &-title {
+    text-align: center;
+    margin-bottom: 50px;
+    @include mobile {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 45px;
+      @include tablet {
+        font-size: 35px;
+        line-height: 44px;
+      }
+      @include mobile {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+.ml-25 {
+  margin-left: 25px;
+
+  @include desktop {
+    margin-left: 0px;
+  }
+}
+
+.mr-25 {
+  margin-right: 25px;
+
+  @include desktop {
+    margin-right: 0px;
+  }
+}
+
+.form-control {
+  min-height: 52px;
+  margin-bottom: 30px;
+  padding: 15px 20px;
+  font-size: 15px;
+  background: rgba($color: $border-color, $alpha: 0.5);
+  border-radius: 4px;
+  border-color: transparent;
+  transition: 0.3s ease;
+  &:focus {
+    box-shadow: none;
+    border-color: $primary-color;
+    box-shadow: 0px 5px 25px rgba(25, 24, 29, 0.06);
+  }
+}
+
+.privacy-policy{
+  margin-top:200px !important
+}
